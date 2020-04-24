@@ -1,0 +1,16 @@
+[
+    {
+        "componentname": "vuedemo",
+        "manifest": "/remote/manifest.json",
+        "propsschema": {
+
+        }
+    },
+    {
+        "componentname": "vuedemo",
+        "manifest": "/remote/manifest.json",
+        "propsschema": {
+            
+        }
+    }
+]
