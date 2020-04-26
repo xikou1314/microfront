@@ -1,14 +1,14 @@
 [
     {
-        "componentname": "vuedemo",
-        "manifest": "/remote/manifest.json",
+        "componentname": "componenta",
+        "path": "http://localhost:8091/test/components/componentA.js",
         "propsschema": {
 
         }
     },
     {
-        "componentname": "vuedemo",
-        "manifest": "/remote/manifest.json",
+        "componentname": "componentb",
+        "path": "http://localhost:8091/test/components/componentB.js",
         "propsschema": {
             
         }

@@ -11,7 +11,7 @@ module.exports = {
     index: path.resolve(__dirname, '../dist/index.html'),
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: '/test/main',
     productionSourceMap: true,
     // Gzip off by default as many popular static hosts such as
     // Surge or Netlify already gzip all static assets for you.
@@ -33,19 +33,11 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       "/remote": {
-        target: "http://127.0.0.1:3000/",
+        target: "http://127.0.0.1:8091/",
         changeOrigin: true,  //是否跨域
         secure: false,
         pathRewrite: {
             '^/remote': ''
-        }
-      },
-      "/r2emote": {
-        target: "http://127.0.0.1:3001/",
-        changeOrigin: true,  //是否跨域
-        secure: false,
-        pathRewrite: {
-            '^/r2emote': ''
         }
       }
 

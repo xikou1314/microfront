@@ -14,7 +14,7 @@
       };
     },
     created() {
-      axios.get('/static/service.json').then(res => {
+      axios.get('/test/main/static/service.json').then(res => {
         // 加载远程组件和远程应用
         // 加载完远程应用后 对远程应用进行注册 对应的挂载节点也需要进行创建
         console.log('服务内容');
@@ -37,11 +37,16 @@
         // 注册路由
       });
 
-      axios.get('/static/component.json').then(res => {
+      axios.get('/test/main/static/component.json').then(res => {
         // 加载远程组件和远程应用
         // 加载完远程应用后 对远程应用进行注册 对应的挂载节点也需要进行创建
         console.log('组件内容');
+        sessionStorage.setItem('components', JSON.stringify(res.data));
         console.log(res);
+      });
+
+      window.BaseMessager.listen('main', function(data) {
+        console.log('main接收到的信息', data);
       });
     },
       methods: {

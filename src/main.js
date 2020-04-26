@@ -6,6 +6,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 import Vue from 'vue';
 import ElementUI from 'element-ui';
 import { Prototype } from '@/global';
+import './util/messenger';
 // import './single-spa-config.js';
 
 import App from './App';

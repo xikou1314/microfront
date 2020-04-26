@@ -17,6 +17,10 @@
                 <i class="el-icon-setting"></i>
                 <span slot="title">iframe</span>
             </el-menu-item>
+            <el-menu-item index="/container/iframebox2">
+                <i class="el-icon-setting"></i>
+                <span slot="title">iframe2</span>
+            </el-menu-item>
             </el-menu>
         </el-aside>
         <el-container>

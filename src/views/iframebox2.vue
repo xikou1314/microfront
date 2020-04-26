@@ -1,8 +1,8 @@
 <template>
   <div class="box">
     iframe
-    <button @click="sendMsg">发送信息到iframe3</button>
-    <micro src="/test/vuedemo3/" name="vuedemo3" type="iframe" class="height"></micro>
+    <button @click="sendMsg">发送信息到iframe4</button>
+    <micro src="/test/vuedemo4/" name="vuedemo4" type="iframe" class="height"></micro>
   </div>
 </template>
 
@@ -10,7 +10,7 @@
   import micro from '../components/micro';
 
   export default {
-    name: 'IframeBox',
+    name: 'IframeBox2',
     components: { micro },
     props: {
     },
@@ -22,8 +22,7 @@
     },
     methods: {
       sendMsg() {
-        // document.getElementById('vuedemo3').contentWindow.onBaseMessage('这是main传递给iframe3的信息');
-        window.BaseMessager.trigger('vuedemo3', '这是main传递给iframe3的信息');
+        window.BaseMessager.trigger('vuedemo4', '这是main传递给vuedemo4的信息');
       }
     }
   };

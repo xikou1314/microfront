@@ -14,7 +14,8 @@
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "npm run dev",
-    "build": "node build/build-async-components-library.js",
+    "build": "node build/build.js",
+    "buildLib": "node build/build-async-components-library.js",
     "buildSC": "node build/build-async-components.js",
     "lint": "eslint --ext .js,.vue src"
   },

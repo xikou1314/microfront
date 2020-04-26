@@ -1,7 +1,7 @@
 [
     {
         "appname": "vuedemo1",
-        "manifest": "/remote/manifest.json",
+        "manifest": "/test/vuedemo1/manifest.json",
         "fatherName": "VueBox",
         "father": "vuebox",
         "type": "vue",
@@ -11,7 +11,7 @@
         "appname": "vuedemo2",
         "father": "angularbox",
         "fatherName": "AngularBox",
-        "manifest": "/r2emote/manifest.json",
+        "manifest": "/test/vuedemo2/manifest.json",
         "type": "vue",
         "chunkname": "app"
     }
